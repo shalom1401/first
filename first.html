@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <script src="app.js"></script>
+    <head>
+        <title>cricket team </title>
+    </head>
+    <body> 
+      
+                        <h3>cricket team list</h3>
+
+                        <ul>
+                            <li><a href="#RCB">RCB</a></li>
+                            <li><a href="#MI">MI</a></li>
+                            <li><a href="#RR">RR</a></li>
+                            <li><a href="#KKR">KKR</a></li>
+                            <li><a href="#LSG">LSG</a></li>
+                            <li><a href="#GT">GT</a></li>
+                            <li><a href="#CSK">CSK</a></li>
+            
+                          </ul>
+
+                          
+                          <ul class="team-list">
+                            <li class="team-item">
+                                <h2>RCB</h2>
+                                <div id="RCB"><img src="New folder/Rcb.jpeg" alt="RCB Icon" width="300" height="500"></div>
+                                <p>Player Count: 11</p>
+                                <p>Top Batsman: Player A</p>
+                                <p>Top Bowler: Player B</p>
+                                <p>Championship Won Count: 0</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>MI</h2>
+                                <div id="MI"><img src="New folder/mum.jpeg" alt="MI Icon" width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 6</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>RR</h2>
+                                <div id="RR"><img src="New folder/rr.jpeg" alt="RR Icon" width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 2</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>KKR</h2>
+                                <div id="KKR"><img src="New folder/kkr.jpeg" alt="KKR Icon"width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 3</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>LSG</h2>
+                                <div id="LSG"><img src="New folder/lsg.jpeg" alt="LSG Icon" width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 1</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>GT</h2>
+                                <div id="GT"><img src="New folder/gt.jpeg" alt="GT Icon"width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 1</p>
+                            </li>
+                            <li class="team-item">
+                                <h2>CSK</h2>
+                                <div id="CSK"><img src="New folder/csk.jpeg" alt="CSK Icon"width="300" height="500"></div>
+                                <p>Player Count: 10</p>
+                                <p>Top Batsman: Player X</p>
+                                <p>Top Bowler: Player Y</p>
+                                <p>Championship Won Count: 7</p>
+                            </li>
+                         </ul>
+                         <form id="createPlayerForm">
+                            <label for="fullName">Full Name:</label>
+                            
+                            <select id="fullName" required>
+                              <option value="hardik pandya">hardik pandya</option>
+                              <option value="virat kholi">virat kholi</option>
+                              <option value="yuvraj singh">yuvraj singh</option>
+                              <option value="chris morris">chris morris</option>
+                              <option value="Rohit sharma">Rohit sharma</option>
+                              <option value="ishan kishan">ishan kishan</option>
+                              <option value="glenn maxwell">glenn maxwell</option>
+                              
+                              
+                              
+                            </select>
+                          
+                            <label for="photo">Photo:</label>
+                            <input type="file" id="photo" accept="image/*" required>
+                          
+                            <label for="team">Team:</label>
+                            <select id="team" required>
+                              <option value="RCB">Rcb</option>
+                              <option value="CSK">CSK</option>
+                              <option value="LSG">LSG</option>
+                              <option value="GT">GT</option>
+                              <option value="MI">MI</option>
+                              <option value="RR">RR</option>
+                              <option value="kkr">KKR</option>
+                              
+                              
+                            </select>
+                          
+                            <label for="price">Price:</label>
+                            
+                            <select id="price" required>
+                              <option value="6.50cr">6.50cr</option>
+                              <option value="8.00cr">8.00cr</option>
+                              <option value="1.00cr">1.00cr</option>
+                              <option value="16.25cr">1625cr</option>
+                              <option value="14.25cr">14.25cr</option>
+                              <option value="6.50cr">6.50cr</option>
+                              <option value="6.50cr">6.50cr</option>
+                              <option value="2.50cr">2.50cr</option>
+                              
+                              
+                            </select>
+                          
+                            <label for="playingStatus">Playing Status:</label>
+                            <select id="playingStatus" required>
+                              <option value="playing">Playing</option>
+                              <option value="on-bench">On-bench</option>
+                            </select>
+                          
+                            <label for="description">description:</label>
+                            <select id="description" required>
+                              <option value="batsman">Batsman</option>
+                              <option value="bowler">Bowler</option>
+                              <option value="all-rounder">All-rounder</option>
+                             </select>
+                          
+                             <button type="submit">Create Player</button>
+                            
+                             <input type="text" id="searchTeamCode" placeholder="Enter team code ">
+                             <button type="button" id="searchButton">Search</button>
+                          
+                             </form> 
+                           
+                          
+                         <div class="top-bar">
+                    
+                         <button id="addTeamButton">Add Team</button>
+                         <button id="addPlayerButton">Add Player</button>
+                    
+                         </div>
+                        
+                        
+                       
+                      
+                      
+                      
+                         <div id="addTeamForm" style="display: none;">
+                         <h2>Add New Team</h2>
+                         <label for="teamName">Team Name:</label>
+                         <input type="text" id="teamName" required>
+                        
+                         <button type="button" id="addTeamFormButton">Add Team</button>
+                         </div> 
+                      
+                      
+                      
+                         <div id="addPlayerForm" style="display: none;">
+                         <h2>Add New Player</h2>
+                         <label for="playerName">Player Name:</label>
+                          <input type="text" id="playerName" required>
+
+                           <label for="from">From:</label>
+                           <input type="text" id="from" required>
+
+                             <label for="price">Price:</label>
+                              <input type="text" id="price" required>
+
+                              <label for="isPlaying">Is Playing:</label>
+                              <input type="checkbox" id="isPlaying">
+
+                                <label for="description">Description:</label>
+                                  <input type="text" id="description" required>
+                        
+                                  <button type="button" id="addPlayerFormButton">Add Player</button>
+                         </div>
+                      
+                     
+                        
+        <body style="
+        padding:0px;
+        margin:0px;
+        background-color:lightseagreen;">
+
+
+        <style>
+        .header h2{
+          text-align: center;
+          
+        }
+            
+      
+            .text-content a{
+              text-decoration:none;
+              color:rgb(187, 31, 31);
+            }
+            .images{
+              width:60%;
+              margin:auto ;
+              height: 50%;
+            }
+            .labels{
+              margin-left:200px;
+              margin-bottom:200px;
+            }
+            .cricket team {
+              width: 5px;
+              height:6px;
+            }
+          </style>
+    
+  </body>
+ </html>
